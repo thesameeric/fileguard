@@ -1,5 +1,5 @@
 {
-  "name": "fileguard",
+  "name": "@thesameeric/fileguard",
   "version": "1.0.0",
   "description": "A file validation library for node js",
   "main": "build/index.js",
@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/okiti/mercury/issues"
   },
-  "homepage": "https://github.com/okiti/mercury#readme"
+  "homepage": "https://github.com/okiti/mercury#readme",
+  "dependencies": {
+    "semver": "^6.3.0"
+  }
 }
