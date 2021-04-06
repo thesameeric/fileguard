@@ -1,0 +1,32 @@
+{
+  "name": "mercury",
+  "version": "1.0.0",
+  "description": "A file validation library for node js",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel index.js -d build",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okiti/mercury.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "core-js": "^3.10.0"
+  },
+  "keywords": [
+    "file",
+    "validation"
+  ],
+  "author": "Eric",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okiti/mercury/issues"
+  },
+  "homepage": "https://github.com/okiti/mercury#readme"
+}
