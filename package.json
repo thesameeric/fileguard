@@ -1,5 +1,5 @@
 {
-  "name": "mercury",
+  "name": "fileguard",
   "version": "1.0.0",
   "description": "A file validation library for node js",
   "main": "build/index.js",
