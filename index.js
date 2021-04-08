@@ -1,4 +1,4 @@
-const mercury = {
+const fileguard = {
 	error: false,
 	errorMessage: [],
 	data: null,
@@ -56,4 +56,4 @@ const mercury = {
 	},
 };
 
-export default mercury;
+export default fileguard;
