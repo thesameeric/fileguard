@@ -5,6 +5,7 @@ const fileguard = {
 	mimetypes: ['image/jpeg'],
 	file(uImage) {
 		if (uImage) {
+			// Reseting to default.
 			this.data = uImage;
 			this.error = false;
 			this.errorMessage = [];
@@ -17,6 +18,7 @@ const fileguard = {
 		if (this.data) {
 			if (Object.prototype.toString.call(uTypes) === '[object Array]') {
 				const file = this.data;
+				// Getting file extension
 				// eslint-disable-next-line no-bitwise
 				const fileext = file.originalname.slice((file.originalname.lastIndexOf('.') - 1 >>> 0) + 2);
 				if (fileext && !uTypes.includes(fileext)) {
@@ -41,6 +43,7 @@ const fileguard = {
 		return this;
 	},
 	errorHandler(code) {
+		// Error handler to avoid repeated error messages
 		const errorMessages = {
 			100: 'Invalid request body',
 			200: 'File too large',
