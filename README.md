@@ -18,3 +18,10 @@ Install
 
 Usage
 ========
+    const filegaurd = require('@thesameeric/filguard');
+
+    const validatedFile = fileguard.file(file).size(3).type(['png', jpg]);
+
+    if(validatedFile.error) {
+        <!-- Rerturn error -->
+    }
