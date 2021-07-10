@@ -19,7 +19,6 @@ const fileguard = {
 			if (Object.prototype.toString.call(uTypes) === '[object Array]') {
 				const file = this.data;
 				// Getting file extension
-				// eslint-disable-next-line no-bitwise
 				const fileext = file.originalname.slice((file.originalname.lastIndexOf('.') - 1 >>> 0) + 2);
 				if (fileext && !uTypes.includes(fileext)) {
 					this.errorHandler(300);
