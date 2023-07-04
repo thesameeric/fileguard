@@ -9,7 +9,7 @@ or any other ```multipart/formdata``` parser.
 Requirements
 ============
 
-* [node.js](http://nodejs.org/) -- v4.5.0 or newer
+* [node.js](http://nodejs.org/) -- v14.x or newer
 
 
 Install
