@@ -2,9 +2,9 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 export class FileGuard {
-    private file: any;
-    private errorMessage: any;
-    private error: boolean;
+    public file: any;
+    public errorMessage: string[];
+    public error: boolean;
 
     constructor(inputFile: any) {
         if (inputFile) {
@@ -65,7 +65,7 @@ export class FileGuard {
     }
 
     private errorHandler(code: number) {
-		const errorMessages: { [key: number]: string | undefined } = {
+		const errorMessages: { [key: number]: string } = {
 			100: 'Invalid request body',
 			200: 'File too large',
 			300: 'Invalid file type',
