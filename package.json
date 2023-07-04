@@ -1,6 +1,6 @@
 {
   "name": "@thesameeric/fileguard",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A file validation library for node js",
   "main": "dist/index.js",
   "scripts": {
